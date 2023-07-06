@@ -48,7 +48,7 @@ main {
     color: var(--colorNegro);
   }
   
-@media(min-width: 424px){
+@media(max-width: 768px){
 
     main {
       display: flex;
