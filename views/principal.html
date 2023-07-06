@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>La Carta</title>
 </head>
 <body>
@@ -10,24 +11,25 @@
         <h1>Nuestro Restó</h1>
         <h2>Carta</h2>
     </header>
-    <aside>
-        <nav>
-            <ul>
-                <li><a href="/">Entradas</a></li>
-                <li><a href="/principal">Platos principales</a></li>
-                <li>Ensaladas</li>
-                <li>Raws</li>
-                <li><a href="/postres">Postres</a></li>
-                <li>Desayunos y Meriendas</li>
-                <li>Bebidas</li>
-                <li>Smoothies</li>
-                <li>Té y café</li>
-                <li>Vinos</li>
-                <li>Cervezas</li>
-            </ul>
-        </nav>
-    </aside>
+    
     <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="/">Entradas</a></li>
+                    <li><a href="/principal">Platos principales</a></li>
+                    <li>Ensaladas</li>
+                    <li>Raws</li>
+                    <li><a href="/postres">Postres</a></li>
+                    <li>Desayunos y Meriendas</li>
+                    <li>Bebidas</li>
+                    <li>Smoothies</li>
+                    <li>Té y café</li>
+                    <li>Vinos</li>
+                    <li>Cervezas</li>
+                </ul>
+            </nav>
+        </aside>
         <section>
             <h3>Platos Principales</h3>
            <article>
@@ -44,8 +46,6 @@
                 <h4>Penne Rigatte</h4>
                 <p>Con salsa filete, crema o rosa.</p>
            </article>
-
-            <img src="/img/foto-ppal.jpg" alt="">
 
            <article>
                 <h4>Ensalada de langostinos</h4>
@@ -96,14 +96,19 @@
                 <p>Rellenos con calabaza asada y queso brie, perfumados con manteca de hierbas y jugo de pomelo.</p>
             </article>
 
-            <p><a href="#">Volver arriba</a></p>
+            <div>
+                <a href="#">Volver arriba</a>
+            </div>
         </section>
-            
+        <div>
+            <img class="foto_producto" src="/img/foto-ppal.jpg" alt="">
+        </div>
     </main>
 
     <footer>
         <img src="/img/logo-web.png" alt="logo" width="300">
         <nav>
+            <h4>Contacto</h4>
             <ul>
                 <li><a href="">Facebook</a></li>
                 <li><a href="">Twitter</a></li>
