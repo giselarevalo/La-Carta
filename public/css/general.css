@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
@@ -32,7 +32,7 @@ ul li {
 } 
 
 ul {
-    padding-left: 0px;
+    /* padding-left: 0px; */
 }
 
 a {
@@ -70,4 +70,9 @@ p{
     font-weight: 400;
     font-size: 0.9em;
     color: var(--colorNegro);
+}
+
+img{
+    width: 100%;
+    
 }

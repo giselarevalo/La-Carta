@@ -1,6 +1,56 @@
-/* MAIN */
+/* MAIN MOBILE */
 
 main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+main aside {
+  width: 100%;
+  border-right: none;
+  border-bottom: 1px solid var(--colorGrisOscuro);
+  margin-bottom: 20px;
+  padding: 20px 0px 20px 0;
+  text-align: center;
+}
+main section{
+  width: 100%;
+  order: 1;
+  padding: 20px;
+  
+}
+
+main section h3 {
+  padding: 10px 0px 10px 0px;
+  display: inline;
+}
+
+main section article {
+  padding: 20px 0px 10px 0px;
+}
+
+main figure {
+  width: 100%;
+  padding: 10px;
+}
+
+main figure img.foto_producto {
+  border: 1px solid var(--colorGrisClaro);
+  width: 100%;
+  
+}
+
+main section div.link-volver {
+  font-weight: 900;
+  font-size: 1em;
+  color: var(--colorNegro);
+}
+
+
+
+/* DESKTOP */
+@media(min-width:768px){
+  main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -14,15 +64,17 @@ main {
     width: 25%;
     border-right: 1px solid  var(--colorGrisOscuro);
     padding: 0 20px 0 0;
-    
+    border-bottom:none;
   }
 
   main aside nav ul li {
     padding: 5px 0;
+    text-align: left;
   }
 
   main section{
     width: 50%;
+    order:0;
   }
   
   main section h3 {
@@ -37,45 +89,17 @@ main {
     padding: 20px 0px 10px 20px;
   }
   
-  img.foto_producto {
-    border: 1px solid var(--colorGrisClaro);
-    
+
+  main figure {
+    width: 25%;
+    padding: 10px;
   }
+
   
-  main section div a {
+  main section div.link-volver {
     font-weight: 900;
     font-size: 1em;
     color: var(--colorNegro);
   }
+}
   
-@media(max-width: 768px){
-
-    main {
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      
-    }
-    main aside {
-      width: 100%;
-      border-right: none;
-      border-bottom: 1px solid var(--colorGrisOscuro);
-      margin-bottom: 20px;
-      padding: 20px 20px 20px 0;
-    }
-    main section{
-      width: 100%;
-      order: 1;
-      
-    }
-    main section h3 {
-      padding: 10px 0px 10px 0px;
-    }
-    
-    main section article {
-      padding: 20px 0px 10px 0px;
-    }
-    
-
-
-  }
